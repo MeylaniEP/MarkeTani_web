@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!--Header-->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand" >
+                    <a href="#hero">
+                        <h1><span>P</span>ijar <span>P</span>ahlawan</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a href="#cv" data-after="Cv">CV</a></li>
+                        <li><a href="#projects" data-after="Project">Project</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Header-->
+
+    <!--Hero Section-->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hello, <span></span></h1>
+                <h1>My Name is <span></span></h1>
+                <h1>Pijar <span></span></h1>
+                <a href="#projects" type="button" class="cta">Portofolio</a>
+            </div>
+        </div>
+    </section>
+    <!--End Hero Section-->
+
+    <!--CV section-->
+    <section id="cv">
+      <div class="cv container">
+        <div class="cv-top">
+          <img src="images/cv.png">
+        </div>
+        <div class="cv-buttom">
+          <p style="font-size: 4em;">Download CV saya</p>
+          <a href="dokumen/cvpdf.pdf" type="button" class="cta1">My CV</a>
+        </div>
+      </div>
+        
+    </section>
+    <!--End cv section-->
+
+    <!--Project Section-->
+    <section id="projects">
+        <div class="projects container">
+          <div class="projects-header">
+            <h1 class="section-title">Recent <span>Projects</span></h1>
+          </div>
+          <div class="all-projects">
+            <div class="project-item">
+              <div class="project-info">
+                <h1>Green V Web</h1>
+                <h2>Web Apps</h2>
+                <p>Web ini membantu para suplier sayur untuk memasarkan
+                  hasil alamnya. Beberapa Fitur yang membuat web ini sangat berguna yaitu yang pertama
+                  adanya update ketersediaan pasokan sayuran dari berbagai daerah meliputi usaha mikro maupun makro usaha
+                  yang terdaftar di web tersebut. Fitur kedua yaitu dapat membentuk suatu komunitas
+                  suplier sayur yang dilengkapi dengan kolom chat, hal tersebut memudahkan para user untuk saling berinteraksi
+                  dan bertukar informasi. </div>
+              <div class="project-img">
+                <img src="./images/sayur.jpg" alt="img">
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-info">
+                <h1>Hotel Reservation</h1>
+                <h2>Aplikasi</h2>
+                <p>Aplikasi ini memiliki fungsi membeerikan saran penginapan yang sesuai dengan
+                  filterisasi user. Ada beberapa API yang saya gunakan seperti API Lokasi, API Paypal dan API sertifikasi.
+                  Fitur utama pada aplikasi ini adalah booking tempat penginapan dan 
+                  rekomendasi penginapan sesuai rating kenyamanan.</p>
+          </div>
+              <div class="project-img">
+                <img src="./images/hotel.jpg" alt="img">
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-info">
+                <h1>Pelayanan Kesehatan</h1>
+                <h2>Aplikasi</h2>
+                <p>Projek ini berbasis web dan telah diterapkan di Rumah Sakit Suka Sehat.
+                  Banyak fitur didalamnya yang pastinya mebantu para nakes untuk meng efisienkan waktu.
+                  Dengan efisiensi waktu, rumah sakit cepat dan dapat menampung pasien-paasien dalam keadaan darurat
+                  tampa menunggu-nunggu.
+              </div>
+              <div class="project-img">
+                <img src="./images/dokter.jpg" alt="img">
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-info">
+                <h1>Kamus Kampus Tani</h1>
+                <h2>Aplikasi</h2>
+                <p>Suatu aplikasi yang membantu mahasiswa khususnya dibidang pertanian.
+                  Deskripsi fitur yang pertama yaitu, kamus ini menyediakan penjelasan lengkap tentang
+                  suatu tumbuhan yang bisa kita akses di bagian pencarian.
+                </div>
+              <div class="project-img">
+                <img src="./images/kamus.jpg" alt="img">
+              </div>
+            </div>
+            <div class="project-item">
+              <div class="project-info">
+                <h1>Move Catalog</h1>
+                <h2>Web Apps</h2>
+                <p>Aplikasi ini membantu para user untuk memberikan informasi film
+                  yang bisa kita cari dalam fitur pencarian atau sudah tersedia dibagian kolom rekomendasi
+                  atau dapat memfilter sesuai genre.
+                </div>
+              <div class="project-img">
+                <img src="./images/film.jpg" alt="img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--End project section-->
+
+    <!--About section-->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <input type="radio" name="slider" id="item-1">
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3" checked>
+            <div class="cards">
+              <label for="item-1" id="song-1" class="card">
+                <img src="images/pijar4.jpeg">
+              </label>
+              <label for="item-2" id="song-2" class="card">
+                <img src="images/profile.jpeg">
+              </label>
+              <label for="item-3" id="song-3" class="card">
+                <img src="images/mas2.png">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>Back End Developer</h2>
+          <p>Saya kelahiran Batang, Jawa Tengah dan telah lama menetap di Yogyakarta. 
+            Saya adalah pimpinan perusahaan Fast Code yang bergelut dibidang jasa pemuatan web serta aplikasi.
+            Ketertarikan terhadap pemrograman membawa saya berhasil menciptakan beberapa web dan aplikasi yang bermanfaat 
+            untuk para pengguna. Adapun web atau aplikasi yang dikembangkan bersama rekan-rekan Fast Code dan itu merupakan Projek
+            yang menurut kami sangat spesial, karena projek tersebut kami ciptakan untuk pelayanan masyarakat dan permintaan
+            itu diajukan oleh pemerintah pusat RI.
+          </p>
+          <a href="FastCodecp.html" class="cta">Fast Code Website</a>
+        </div>
+      </div>
+    </section>
+    <!--<section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="container">  css about img
+            <input type="radio" name="slider" id="item-1">
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3" checked>
+             <div class="cards">
+              <label for="item-1" id="song-1" class="card">
+               <img src="images/mas2.png">
+               </label>
+               <label for="item-2" id="song-2" class="card">
+                 <img src="images/profile.jpeg">
+               </label>
+               <label for="item-3" id="song-3" class="card">
+                 <img  src="images/pijar4.jpeg">
+               </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>Front End Developer</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
+            repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
+            exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
+            Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
+            reprehenderit libero enim!</p>
+          <a href="#" class="cta">Download Resume</a>
+        </div>
+      </div>
+    </section> -->
+    <!--End About section-->
+
+    <!--Kontak Section-->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contacts <span>Info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon"><img src="images/hp.png"></div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+62 881-287-9626</h2>
+              <h2>+62 812-1747-8861</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon"><img src="images/email.png"></div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>workofficial@gmail.com</h2>
+              <h2>pijarpq@gmail.com</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon"><img src="images/alamat.png"></div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>Batang, Jawa Tengah, Indonesia</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Kontak Section-->
+
+    <!--Footer-->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>P</span>ijar <span>P</span>ahlawan</h1>
+        </div>
+        <h2>This is My Profile</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr"><img src="images/fb.png"></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.instagram.com/?hl=en"><img src="images/ig.png"></a>
+          </div>
+          <div class="social-item">
+            <a href="https://twitter.com/i/flow/login"><img src="images/tw.png"></a>
+          </div>
+          <div class="social-item">
+            <a href="https://web.telegram.org/k/"><img src="images/telegram.png"></a>
+          </div>
+        </div>
+        <p>Copyright 0 2023 Pijar. All rights reserved</p>
+      </div>
+    </section>
+    <!--End Footer-->
+
+    <script src="./app.js"></script>
+   
+</html>
