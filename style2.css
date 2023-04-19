@@ -42,7 +42,7 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: crimson;
+	color: rgb(20, 220, 97);
 }
 
 .cta {
@@ -50,7 +50,8 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid crimson;
+	border: 2px solid rgb(20, 220, 97);
+	border-radius: 10px;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -60,33 +61,53 @@ p {
 }
 .cta:hover {
 	color: white;
-	background-color: crimson;
+	background-color: rgb(20, 220, 97);
 }
-.cta1 {
+.login {
 	display: inline-block;
+}
+/* .cta1 {
 	padding: 10px 30px;
-	color: black;
+	color: white;
+	align-content: center;
 	background-color: transparent;
-	border: 2px solid crimson;
+	border: 2px solid rgb(20, 220, 97);
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	margin-top: 30px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
+	border-radius: 10px;
+} */
+.cta2 {
+	padding: 10px 30px;
+	color: white;
+	align-content: center;
+	background-color: rgb(48, 123, 77);
+	border: 2px solid rgb(48, 123, 77);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+	border-radius: 10px;
 }
-.cta1:hover {
+.cta2:hover {
 	color: black;
-	background-color: crimson;
+	background-color: rgb(20, 220, 97);
+	border-color: rgb(20, 220, 97);
 }
 
 .brand h1 {
-	font-size: 3rem;
-	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: bold;
 	color: white;
 }
+
 .brand h1 span {
-	color: crimson;
+	color: rgb(20, 220, 97);
 }
 
 /* Header section */
@@ -97,6 +118,7 @@ p {
 	top: 0;
 	width: 100vw;
 	height: auto;
+	
 }
 #header .header {
 	min-height: 8vh;
@@ -112,6 +134,7 @@ p {
 	max-width: 1300px;
 	padding: 0 10px;
 }
+
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
@@ -128,6 +151,23 @@ p {
 	overflow-x: hidden;
 	transition: 0.5s ease left;
 }
+#header .login ul a {
+	margin: 0;
+	box-sizing: border-box;
+	display: block;
+	margin-right: -150px;
+	text-align: center;
+	overflow-x: hidden;
+	transition: 0.5s ease left;
+}
+#header .daftar ul a{
+	margin: 0;
+	box-sizing: border-box;
+	display: inline-block;
+	overflow-x: hidden;
+	position: relative;
+}
+
 #header .nav-list ul.active {
 	left: 0%;
 }
@@ -153,12 +193,13 @@ p {
 	z-index: -1;
 	transition: 0.3s ease letter-spacing;
 }
+
 #header .nav-list ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: crimson;
+	color: rgb(20, 220, 97);
 }
 #header .hamburger {
 	height: 60px;
@@ -173,7 +214,7 @@ p {
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(0.8);
-	margin-right: 20px;
+	margin-right: 10px;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -218,7 +259,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./images/profile.jpeg);
+	background-image: url(./images/tani.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -244,7 +285,7 @@ p {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 6rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
@@ -265,8 +306,9 @@ p {
 	top: 0;
 	left: 0;
 	height: 100%;
+	border-radius: 8px;
 	width: 0;
-	background-color: crimson;
+	background-color: rgb(20, 220, 97);
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -285,20 +327,17 @@ p {
 /* cv Section */
 
 #cv .cv {
-	flex-direction: row;
+	flex-direction: column;
+	align-items: center;
 	text-align: left;
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
 #cv .cv-top {
-	max-width: 500px;
-	
-	margin-right: 100px;
+	flex-wrap: wrap;
 }
 #cv .cv-bottom{
-	max-width: 500px;
-	margin-right: 100px;
 	
 	/*display: flex;
 	align-items: 30px;
@@ -424,7 +463,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid crimson;
+	border: 7px solid rgb(20, 220, 97);
 	z-index: -1;
 }
 /* End About Section */
@@ -542,18 +581,24 @@ p {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: crimson;
+		color: rgb(20, 220, 97);
 		font-weight: 500;
 	}
 }
 /* End Keyframes */
-
+#header .daftar .cta2 {
+	display: none;
+}
 /* Media Query For Tablet */
-@media only screen and (min-width: 768px) {
+@media  screen and (min-width: 768px) {
+	#header .daftar .cta2 {
+		display: block;
+	}
 	.cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
 	}
+	
 	h1.section-title {
 		font-size: 6rem;
 	}
@@ -631,10 +676,12 @@ p {
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px){
+	
 	/* header */
 	#header .hamburger {
 		display: none;
 	}
+
 	#header .nav-list ul {
 		position: initial;
 		display: block;
@@ -642,6 +689,7 @@ p {
 		width: fit-content;
 		background-color: transparent;
 	}
+	
 	#header .nav-list ul li {
 		display: inline-block;
 	}
@@ -767,4 +815,16 @@ input[type=radio] {
 	border: 7px solid white;
 	z-index: -1;
 }
+.leftSide{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 /* End About Section */
+
+/* tambahan */
+#CV  .des p {
+	height: 50%;
+	text-align: center;
+	
+}
