@@ -1,0 +1,81 @@
+body {
+	background-color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login {
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #CFCFCF;
+	margin: auto;
+	margin-top: 50px;
+	padding: 20px;
+	width: 400px;
+}
+
+h1 {
+	color: #333333;
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	color: #333333;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+	border-radius: 3px;
+	border: none;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+input[type="submit"] {
+	background-color: #333333;
+	border-radius: 3px;
+	border: none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 10px;
+}
+
+input[type="submit"]:hover {
+	background-color: #555555;
+}
+
+/* format container */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container .formLogin{
+    background-color: aquamarine;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.container .formLogin .pengisian{
+    margin: auto;
+    padding-bottom: 50px;
+}
+.container .formLogin .iklan{
+    margin: auto;
+    padding-bottom: 50px;
+}
+.iklan{
+    padding-top: 40px;
+}
+.iklan .img{
+    width: 300px;
+}
