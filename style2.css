@@ -80,7 +80,8 @@ p {
 	transition-property: background-color, color;
 	border-radius: 10px;
 } */
-.cta2 {
+
+#header .nav-list ul li .cta2 {
 	padding: 10px 30px;
 	color: white;
 	align-content: center;
@@ -94,7 +95,7 @@ p {
 	transition-property: background-color, color;
 	border-radius: 10px;
 }
-.cta2:hover {
+#header .nav-list ul li .cta2:hover {
 	color: black;
 	background-color: rgb(20, 220, 97);
 	border-color: rgb(20, 220, 97);
@@ -122,7 +123,7 @@ p {
 }
 #header .header {
 	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.682);
+	background-color: rgba(31, 30, 30, 0.628);
 	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -138,11 +139,13 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
-	width: 100vw;
-	height: 100vh;
+	background-color:rgba(31, 30, 30, 0.628) ;
+	width: 30%;
+	height: 60vh;
 	left: 100%;
-	top: 0;
+	top: 0%;
+	border: none;
+	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -151,28 +154,28 @@ p {
 	overflow-x: hidden;
 	transition: 0.5s ease left;
 }
-#header .login ul a {
+/* #header .login ul a {
 	margin: 0;
 	box-sizing: border-box;
 	display: block;
 	margin-right: -150px;
 	text-align: center;
 	overflow-x: hidden;
-	transition: 0.5s ease left;
-}
-#header .daftar ul a{
+	transition: 0.5s ease right;
+} */
+/* #header .daftar ul a{
 	margin: 0;
 	box-sizing: border-box;
 	display: inline-block;
 	overflow-x: hidden;
 	position: relative;
-}
+} */
 
 #header .nav-list ul.active {
-	left: 0%;
+	left: 70%;
 }
 #header .nav-list ul a {
-	font-size: 2.5rem;
+	font-size: 1.5em;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
@@ -202,11 +205,11 @@ p {
 	color: rgb(20, 220, 97);
 }
 #header .hamburger {
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 	display: inline-block;
-	border: 3px solid white;
-	border-radius: 50%;
+	border: 3px solid rgb(20, 220, 97);
+	border-radius: 30%;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -216,21 +219,21 @@ p {
 	transform: scale(0.8);
 	margin-right: 10px;
 }
-#header .hamburger:after {
+/* #header .hamburger:after {
 	position: absolute;
 	content: '';
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
-	border: 3px solid white;
+	border: 3px solid rgb(20, 220, 97);
 	animation: hamburger_puls 1s ease infinite;
-}
+} */
 #header .hamburger .bar {
 	height: 2px;
-	width: 30px;
+	width: 20px;
 	position: relative;
-	background-color: white;
-	z-index: -1;
+	background-color: rgb(20, 220, 97);
+	z-index: 100;
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
@@ -239,7 +242,7 @@ p {
 	height: 100%;
 	width: 100%;
 	left: 0;
-	background-color: white;
+	background-color: rgb(20, 220, 97);
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
@@ -337,14 +340,14 @@ p {
 #cv .cv-top {
 	flex-wrap: wrap;
 }
-#cv .cv-bottom{
+/* #cv .cv-bottom{
 	
 	/*display: flex;
 	align-items: 30px;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 50px;*/
-}
+	margin-top: 50px;
+} */
 /* End cv Section */
 
 /* Projects section */
@@ -591,9 +594,6 @@ p {
 }
 /* Media Query For Tablet */
 @media  screen and (min-width: 768px) {
-	#header .daftar .cta2 {
-		display: block;
-	}
 	.cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
