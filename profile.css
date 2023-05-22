@@ -1,0 +1,77 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+.container{
+    height: auto;
+    width: auto;
+}
+
+/* seting header */
+.container .header{
+    display: flex;
+}
+       
+.container .header .logo{
+    margin: auto 40px auto 20px;
+}
+.container .header .logo p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+.container .header .logo span{
+    color: rgb(20, 220, 97);
+}
+        
+.container .header .searchColumn{
+    display: flex;
+    border: solid 1px rgb(20, 220, 97);
+    border-radius: 5px;
+    margin: auto 40px auto 0;
+    width: 100%;
+}
+.container .header .searchColumn .pencarian{
+    margin: 5px auto 5px 5px;
+    width: auto;
+}
+.container .header .searchColumn .pencarian input{
+    border: none;
+    
+}
+.container .header .searchColumn .cari{
+    margin: 5px 5px 5px 5px;
+}
+.container .header .searchColumn button{
+    border-style: none;
+    border-radius: 5px;
+    width: 40px;
+    background-color: rgb(20, 220, 97);
+}
+.container .header .searchColumn button img{
+    width: 10px;
+}
+
+.container .header .avatar{
+    margin: 29px 30px auto 0;
+}
+.container .header .avatar input{
+    width: 40px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 100%;
+}
+/* end setting header */
+
+.container .body{
+    display: flex;
+}
+.container .cekList{
+    background-color: red;
+    padding-right: px;
+}
+.container .biodata{
+    background-color: yellow;
+    padding-right: 100px;
+}
+.container .imageProfile{
+    background-color: green;
+    padding-right: 100px;
+}
